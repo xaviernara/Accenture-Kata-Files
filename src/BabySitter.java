@@ -5,13 +5,54 @@ import java.util.Random;
 
 public class BabySitter {
 
-    public static int calcHourlyRate(String familyName){
+    public static int calcNightCharge(String familyName,LocalTime startTime, LocalTime endTime){
 
-        int hourlyRateToBabysitForFamily = 0;
+        int hourlyRateToBabysitForFamily =0;
 
-        if (familyName == "A"){
-            return 30;
+        if (familyName == "A") {
+
+            for (LocalTime localTime = startTime; localTime.isBefore(endTime); localTime.plusHours(1)) {
+
+                if (localTime.isAfter(LocalTime.parse("23:00"))) {
+                    hourlyRateToBabysitForFamily += 20;
+                }else{
+                    hourlyRateToBabysitForFamily += 15;
+                }
+            }
+
+            return hourlyRateToBabysitForFamily;
         }
+
+        else if (familyName == "B") {
+
+            for (LocalTime localTime = startTime; localTime.isBefore(endTime); localTime.plusHours(1)) {
+
+                if (localTime.isBefore(LocalTime.parse("22:00"))) {
+                    hourlyRateToBabysitForFamily += 12;
+                }else if (localTime.isAfter(LocalTime.parse("22:00")) && localTime.isBefore(LocalTime.parse("24:00")) ){
+                    hourlyRateToBabysitForFamily += 8;
+                }else{
+                    hourlyRateToBabysitForFamily += 16;
+                }
+            }
+
+            return hourlyRateToBabysitForFamily;
+        }
+
+        else {
+            for (LocalTime localTime = startTime; localTime.isBefore(endTime); localTime.plusHours(1)) {
+
+                if (localTime.isBefore(LocalTime.parse("21:00"))) {
+                    hourlyRateToBabysitForFamily += 21;
+                }else{
+                    hourlyRateToBabysitForFamily += 15;
+                }
+            }
+        }
+
+
+
+
         return hourlyRateToBabysitForFamily;
     }
 
@@ -20,7 +61,7 @@ public class BabySitter {
         return familyName;
     }
 
-    public static void familyAMiscDetails(){
+    public static void familyMiscDetails(){
 
         int numOfPets = 2;
         int numOfKids = 3;
@@ -34,12 +75,12 @@ public class BabySitter {
 
 
 
-    public boolean determineIfAvailableToBabysitForTimeRange(LocalTime babysitTimeStart, LocalTime babysitTimeStop) {
+    public static boolean determineIfAvailableToBabysitForTimeRange(LocalTime babysitTimeStart, LocalTime babysitTimeStop) {
 
         LocalTime startBabysittingTime = LocalTime.parse( "17:00" );
         LocalTime stopBabysittingTime = LocalTime.parse( "04:00" );
 
-        if (babysitTimeStart.isAfter(startBabysittingTime) && babysitTimeStop.isAfter(stopBabysittingTime)){
+        if (babysitTimeStart.isAfter(startBabysittingTime) && babysitTimeStop.isBefore(stopBabysittingTime)){
             return true;
         }
         else if (babysitTimeStart.isBefore(stopBabysittingTime) && babysitTimeStop.isAfter(startBabysittingTime)){
@@ -53,4 +94,7 @@ public class BabySitter {
         return false;
 
     }
+
+
+
 }

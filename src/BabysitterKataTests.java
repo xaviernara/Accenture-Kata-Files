@@ -1,7 +1,5 @@
 
 import org.junit.Before;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
@@ -39,17 +37,20 @@ public class BabysitterKataTests {
 
 
     @Test
-    public void babySitterWorksOneHourForAFamilyItReturnsHourlyRate(){
-        assertEquals(30,bs.calcHourlyRate("A"));
+    public void babySitterWorksANightForAFamilyItReturnsPaymentRequired(){
+        assertEquals(120,bs.calcNightCharge("B",LocalTime.parse("20:00"),LocalTime.parse("04:00") ));
+        assertEquals(141,bs.calcNightCharge("C",LocalTime.parse("20:00"),LocalTime.parse("04:00") ));
+        assertEquals(145,bs.calcNightCharge("A",LocalTime.parse("20:00"),LocalTime.parse("04:00") ));
+
     }
 
     @Test
-    public void determineWhichHoursBabysitterCanWorkReturnBooleanIfAvailable(){
-        assertEquals(true, bs.determineIfAvailableToBabysitForTimeRange(time, time2) );
-        assertEquals(false, bs.determineIfAvailableToBabysitForTimeRange(time, time2) );
+    public void determineWhichHoursBabysitterCanWorkTimeRangeReturnBooleanIfAvailable(){
+        //assertEquals(true, bs.determineIfAvailableToBabysitForTimeRange(time, time2) );
+        //assertEquals(false, bs.determineIfAvailableToBabysitForTimeRange(time, time2) );
 
-        //assertEquals(false, bs.determineIfAvailableToBabysitForTimeRange(time, time2) );
-        //assertEquals(false, bs.determineIfAvailableToBabysitForTimeRange(time, time2) );
+        assertEquals(true, bs.determineIfAvailableToBabysitForTimeRange(LocalTime.parse( "17:00" ), LocalTime.parse( "04:00" )) );
+        assertEquals(false, bs.determineIfAvailableToBabysitForTimeRange(LocalTime.parse( "18:34" ), LocalTime.parse( "06:45" )) );
     }
 
     @Test
