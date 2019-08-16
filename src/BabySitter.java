@@ -1,57 +1,52 @@
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.util.Map;
 import java.util.Random;
 
 public class BabySitter {
 
+
+
     public static int calcNightCharge(String familyName,LocalTime startTime, LocalTime endTime){
 
-        int hourlyRateToBabysitForFamily =0;
+        int hourlyRateToBabysitForFamily = 0;
 
-        if (familyName == "A") {
-
+        if ("A".equals(familyName)) {
             for (LocalTime localTime = startTime; localTime.isBefore(endTime); localTime.plusHours(1)) {
 
                 if (localTime.isAfter(LocalTime.parse("23:00"))) {
                     hourlyRateToBabysitForFamily += 20;
-                }else{
+                } else {
                     hourlyRateToBabysitForFamily += 15;
                 }
             }
 
             return hourlyRateToBabysitForFamily;
-        }
-
-        else if (familyName == "B") {
-
+        } else if ("B".equals(familyName)) {
             for (LocalTime localTime = startTime; localTime.isBefore(endTime); localTime.plusHours(1)) {
 
                 if (localTime.isBefore(LocalTime.parse("22:00"))) {
                     hourlyRateToBabysitForFamily += 12;
-                }else if (localTime.isAfter(LocalTime.parse("22:00")) && localTime.isBefore(LocalTime.parse("24:00")) ){
+                } else if (localTime.isAfter(LocalTime.parse("22:00")) && localTime.isBefore(LocalTime.parse("24:00"))) {
                     hourlyRateToBabysitForFamily += 8;
-                }else{
+                } else {
                     hourlyRateToBabysitForFamily += 16;
                 }
             }
 
             return hourlyRateToBabysitForFamily;
-        }
-
-        else {
+        } else {
             for (LocalTime localTime = startTime; localTime.isBefore(endTime); localTime.plusHours(1)) {
 
                 if (localTime.isBefore(LocalTime.parse("21:00"))) {
                     hourlyRateToBabysitForFamily += 21;
-                }else{
+                } else {
                     hourlyRateToBabysitForFamily += 15;
                 }
             }
+
         }
-
-
-
 
         return hourlyRateToBabysitForFamily;
     }
@@ -96,5 +91,12 @@ public class BabySitter {
     }
 
 
+    public static boolean babysitterTimeSlots(Map<String, LocalDate> map, String familyName, LocalDate date) {
 
+        if (map.containsKey(familyName) && map.containsValue(date) ){
+            return true;
+        }
+
+        return false;
+    }
 }
