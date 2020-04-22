@@ -20,10 +20,10 @@
     <session id="-1253417254">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.14" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -38,12 +38,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2298" />
+          <entry key="java" value="2946" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2298" />
+          <entry key="JAVA" value="2946" />
         </counts>
       </usages-collector>
     </session>
@@ -53,12 +53,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BabysitterKataTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="19" column="82" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
+            <state relative-caret-position="93">
+              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#274#275#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BabySitter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="97" column="9" lean-forward="true" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
+            <state relative-caret-position="85">
+              <caret line="98" column="132" selection-start-line="98" selection-start-column="132" selection-end-line="98" selection-end-column="132" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,47 +89,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/BabySitter.java" />
         <option value="$PROJECT_DIR$/src/BabysitterKataTests.java" />
+        <option value="$PROJECT_DIR$/src/BabySitter.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1080" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="753" />
+    <option name="y" value="474" />
     <option name="width" value="1080" />
-    <option name="height" value="1385" />
+    <option name="height" value="1386" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="com.pillar.files" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Accenture-Kata-Files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com.pillar.files" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Accenture-Kata-Files" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565934552047" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566335468081" />
     <property name="create.test.in.the.same.root" value="true" />
   </component>
   <component name="RunDashboard">
@@ -146,12 +125,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BabysitterKataTests.babySitterWorksANightForAFamilyItReturnsPaymentRequired">
+  <component name="RunManager" selected="JUnit.BabysitterKataTests.FamilyIsRequestingBabysitterDayReturnsBooleanIfAvailable">
     <configuration name="BabysitterKataTests" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.pillar.files" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BabysitterKataTests" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BabysitterKataTests.FamilyIsRequestingBabysitterDayReturnsBooleanIfAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.pillar.files" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BabysitterKataTests" />
+      <option name="METHOD_NAME" value="FamilyIsRequestingBabysitterDayReturnsBooleanIfAvailable" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -180,9 +169,11 @@
       <item itemvalue="Android JUnit.BabysitterKataTests" />
       <item itemvalue="JUnit.BabysitterKataTests.determineWhichHoursBabysitterCanWorkReturnBooleanIfAvailable" />
       <item itemvalue="JUnit.BabysitterKataTests.babySitterWorksANightForAFamilyItReturnsPaymentRequired" />
+      <item itemvalue="JUnit.BabysitterKataTests.FamilyIsRequestingBabysitterDayReturnsBooleanIfAvailable" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BabysitterKataTests.FamilyIsRequestingBabysitterDayReturnsBooleanIfAvailable" />
         <item itemvalue="JUnit.BabysitterKataTests.babySitterWorksANightForAFamilyItReturnsPaymentRequired" />
         <item itemvalue="Android JUnit.BabysitterKataTests" />
         <item itemvalue="JUnit.BabysitterKataTests.determineWhichHoursBabysitterCanWorkReturnBooleanIfAvailable" />
@@ -203,39 +194,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BabysitterKataTests_babySitterWorksANightForAFamilyItReturnsPaymentRequired - 2019.08.14 at 20h 05m 55s.xml">
-      <configuration name="BabysitterKataTests.babySitterWorksANightForAFamilyItReturnsPaymentRequired" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabysitterKataTests_babySitterWorksANightForAFamilyItReturnsPaymentRequired - 2019.08.14 at 20h 10m 27s.xml">
-      <configuration name="BabysitterKataTests.babySitterWorksANightForAFamilyItReturnsPaymentRequired" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabysitterKataTests_babySitterWorksANightForAFamilyItReturnsPaymentRequired - 2019.08.14 at 20h 11m 19s.xml">
-      <configuration name="BabysitterKataTests.babySitterWorksANightForAFamilyItReturnsPaymentRequired" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabysitterKataTests_babySitterWorksANightForAFamilyItReturnsPaymentRequired - 2019.08.14 at 20h 11m 53s.xml">
-      <configuration name="BabysitterKataTests.babySitterWorksANightForAFamilyItReturnsPaymentRequired" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabysitterKataTests_babySitterWorksANightForAFamilyItReturnsPaymentRequired - 2019.08.14 at 20h 14m 45s.xml">
-      <configuration name="BabysitterKataTests.babySitterWorksANightForAFamilyItReturnsPaymentRequired" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabysitterKataTests_babySitterWorksANightForAFamilyItReturnsPaymentRequired - 2019.08.14 at 20h 15m 19s.xml">
-      <configuration name="BabysitterKataTests.babySitterWorksANightForAFamilyItReturnsPaymentRequired" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabysitterKataTests_babySitterWorksANightForAFamilyItReturnsPaymentRequired - 2019.08.14 at 20h 15m 45s.xml">
-      <configuration name="BabysitterKataTests.babySitterWorksANightForAFamilyItReturnsPaymentRequired" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabysitterKataTests_babySitterWorksANightForAFamilyItReturnsPaymentRequired - 2019.08.14 at 20h 16m 39s.xml">
-      <configuration name="BabysitterKataTests.babySitterWorksANightForAFamilyItReturnsPaymentRequired" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabysitterKataTests_babySitterWorksANightForAFamilyItReturnsPaymentRequired - 2019.08.14 at 20h 20m 21s.xml">
-      <configuration name="BabysitterKataTests.babySitterWorksANightForAFamilyItReturnsPaymentRequired" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BabysitterKataTests_babySitterWorksANightForAFamilyItReturnsPaymentRequired - 2019.08.15 at 08h 35m 33s.xml">
       <configuration name="BabysitterKataTests.babySitterWorksANightForAFamilyItReturnsPaymentRequired" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BabysitterKataTests_FamilyIsRequestingBabysitterDayReturnsBooleanIfAvailable - 2019.08.17 at 23h 28m 12s.xml">
+      <configuration name="BabysitterKataTests.FamilyIsRequestingBabysitterDayReturnsBooleanIfAvailable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabysitterKataTests_FamilyIsRequestingBabysitterDayReturnsBooleanIfAvailable - 2019.08.17 at 23h 29m 45s.xml">
+      <configuration name="BabysitterKataTests.FamilyIsRequestingBabysitterDayReturnsBooleanIfAvailable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabysitterKataTests_babySitterWorksANightForAFamilyItReturnsPaymentRequired - 2019.08.18 at 20h 42m 42s.xml">
+      <configuration name="BabysitterKataTests.babySitterWorksANightForAFamilyItReturnsPaymentRequired" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabysitterKataTests_babySitterWorksANightForAFamilyItReturnsPaymentRequired - 2019.08.18 at 21h 05m 43s.xml">
+      <configuration name="BabysitterKataTests.babySitterWorksANightForAFamilyItReturnsPaymentRequired" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabysitterKataTests_babySitterWorksANightForAFamilyItReturnsPaymentRequired - 2019.08.18 at 21h 08m 13s.xml">
+      <configuration name="BabysitterKataTests.babySitterWorksANightForAFamilyItReturnsPaymentRequired" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabysitterKataTests_babySitterWorksANightForAFamilyItReturnsPaymentRequired - 2019.08.18 at 21h 18m 10s.xml">
+      <configuration name="BabysitterKataTests.babySitterWorksANightForAFamilyItReturnsPaymentRequired" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabysitterKataTests_babySitterWorksANightForAFamilyItReturnsPaymentRequired - 2019.08.18 at 21h 21m 16s.xml">
+      <configuration name="BabysitterKataTests.babySitterWorksANightForAFamilyItReturnsPaymentRequired" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabysitterKataTests_FamilyIsRequestingBabysitterDayReturnsBooleanIfAvailable - 2019.08.19 at 15h 13m 48s.xml">
+      <configuration name="BabysitterKataTests.FamilyIsRequestingBabysitterDayReturnsBooleanIfAvailable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabysitterKataTests_FamilyIsRequestingBabysitterDayReturnsBooleanIfAvailable - 2019.08.20 at 14h 10m 08s.xml">
+      <configuration name="BabysitterKataTests.FamilyIsRequestingBabysitterDayReturnsBooleanIfAvailable" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="720" y="0" width="720" height="923" extended-state="0" />
+    <frame x="-7" y="-7" width="1455" height="937" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.04157706" />
@@ -248,7 +239,7 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.329602" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.5101266" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.50124377" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39925373" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -311,8 +302,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BabySitter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="97" column="9" lean-forward="true" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
+        <state relative-caret-position="85">
+          <caret line="98" column="132" selection-start-line="98" selection-start-column="132" selection-end-line="98" selection-end-column="132" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -321,12 +312,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BabysitterKataTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" column="82" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
+        <state relative-caret-position="93">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#274#275#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -22,6 +22,8 @@ public class BabySitter {
                 }
             }
 
+            System.out.println(hourlyRateToBabysitForFamily);
+
             return hourlyRateToBabysitForFamily;
         } else if ("B".equals(familyName)) {
             for (LocalTime localTime = startTime; localTime.isBefore(endTime); localTime.plusHours(1)) {
@@ -35,6 +37,7 @@ public class BabySitter {
                 }
             }
 
+            System.out.println(hourlyRateToBabysitForFamily);
             return hourlyRateToBabysitForFamily;
         } else {
             for (LocalTime localTime = startTime; localTime.isBefore(endTime); localTime.plusHours(1)) {
@@ -47,7 +50,7 @@ public class BabySitter {
             }
 
         }
-
+        System.out.println(hourlyRateToBabysitForFamily);
         return hourlyRateToBabysitForFamily;
     }
 
@@ -91,12 +94,28 @@ public class BabySitter {
     }
 
 
-    public static boolean babysitterTimeSlots(Map<String, LocalDate> map, String familyName, LocalDate date) {
+    public static boolean babysitterTimeSlots(Map<String, LocalTime> map, String familyName, LocalTime time, LocalTime time2) {
 
-        if (map.containsKey(familyName) && map.containsValue(date) ){
-            return true;
+        if ( (map.containsKey(familyName) && map.containsValue(time)) && (map.containsKey(familyName) && map.containsValue(time2) ) ){
+            return false;
+        }
+        else{
+            map.put(familyName,time);
+            map.put(familyName,time2);
+
         }
 
-        return false;
+        return true;
     }
+
+    public static boolean babysitterDaySlots(Map<String, LocalDate> map, String familyName, LocalTime date) {
+
+        if ( (map.containsKey(familyName) && map.containsValue(date))){
+            return false;
+        }
+
+        return true;
+    }
+
+
 }
